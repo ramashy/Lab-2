@@ -1,0 +1,22 @@
+//Discription - This program takes length as input in feet and inches. Then the program converts the lengths in centimeters and display it on screen. Assume that the given lengths in feet and inches are integers.
+//Programmer - Ramachandra Shyanaka
+
+#include <iostream>
+using namespace std;
+int main (){
+    double length_feet, length_inch, length_cm;
+    double width_feet, width_inch,width_cm;
+    cout << "Please Enter the Length in feet and Inches :"<<endl;
+    cin >> length_feet;
+    cin >> length_inch;
+    cout <<"Please enterthe width in Feet & inches :"<<endl;
+    cin>>width_feet;
+    cin>>width_inch;
+    length_cm = (length_feet * 30) + (length_inch * 0.393701 );
+    width_cm = (width_feet * 30) + (width_inch * 0.393701 ) ;
+    cout << "Length in Centimeters\t"<<length_cm<<endl;
+    cout << "Width in Centimeters\t"<<width_cm<<endl;
+    
+    return 0;
+    
+}
